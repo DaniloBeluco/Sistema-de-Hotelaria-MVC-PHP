@@ -1,4 +1,4 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>
 <div class = "container">
     <div class='dashboard'>
         <div class = 'quadrado'>

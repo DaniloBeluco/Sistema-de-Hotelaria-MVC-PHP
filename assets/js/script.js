@@ -6,12 +6,12 @@ $(document).ready(function () {
     $("#checkout").mask("99/99/9999");
 
     var a = 0;
-    $('.fechar-left-menu').bind('click', function () {
-        $('.fechar-left-menu').css('transform', 'rotate(90deg)');
+    $('.fechar-menu-design').bind('click', function () {
+        $('.fechar-menu-design').css('transform', 'rotate(90deg)');
         if (a == 0) {
-            $('.left-menu').toggle('low');
-            $('.fechar-left-menu').html('Abrir Menu');
-            $('.fechar-left-menu').animate({'margin-left': -80},
+            $('.left-design').toggle('low');
+            $('.fechar-menu-design').html('Abrir Menu');
+            $('.fechar-menu-design').animate({'margin-left': -140},
             {duration: 400,
                 step: function () {
                     $('.fechar-left-menu').css('width', '20px');
@@ -25,10 +25,10 @@ $(document).ready(function () {
 
             a = 1;
         } else {
-            $('.fechar-left-menu').css('transform', 'rotate(0deg)');
-            $('.left-menu').toggle('low');
-            $('.fechar-left-menu').html('Fechar Menu');
-            $('.fechar-left-menu').animate({'margin-left': 0},
+            $('.fechar-menu-design').css('transform', 'rotate(0deg)');
+            $('.left-design').toggle('low');
+            $('.fechar-menu-design').html('Fechar Menu');
+            $('.fechar-menu-design').animate({'margin-left': 0},
             {duration: 400,
                 step: function () {
                     $('.fechar-left-menu').css('width', '100%');

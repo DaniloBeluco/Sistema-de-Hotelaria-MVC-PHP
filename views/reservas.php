@@ -1,4 +1,4 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>
 <div class="container">
     <div class="cliente-container" >
         <div class="cliente-container-content">  
@@ -9,6 +9,7 @@
                     <input type="text" class="pesq_cpf" name="filtro_quarto" placeholder="Digite o nome do Quarto"/>
                     <input type="submit" class="btn-filtrar" value="Filtrar"/>
                 </form>
+                <a href="<?php echo BASE_URL; ?>reservas/adicionar"><button class="btn-add">Adicionar Reserva</button></a>
             </div>
             <div class="clientes-content">
                 <table class='table table-bordered' width='100%'>

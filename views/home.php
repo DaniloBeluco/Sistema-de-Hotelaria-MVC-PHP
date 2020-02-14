@@ -1,1 +1,1 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>

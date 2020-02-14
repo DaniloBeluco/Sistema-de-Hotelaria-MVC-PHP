@@ -1,4 +1,4 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>
 <?php // include 'right-menu.php';          ?>
 <div class="container">
 

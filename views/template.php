@@ -66,15 +66,15 @@ if (!empty($_SESSION['cLogin'])) {
                     <div  class="col-md-6 mt-md-0 mt-3">
 
                         <!-- Content -->
-                        <img style="padding:20px;" src="<?php echo BASE_URL . 'assets/images/footer/certificado-ssl.png' ?>" width="170"/>
-                        <img style="padding:20px;" src="<?php echo BASE_URL . 'assets/images/footer/google-navegacao-segura.png' ?>" width="170"/>
+                        <img style="padding:20px;" src="<?php echo BASE_URL . 'assets/images/footer/certificado-ssl.png' ?>" width="160"/>
+                        <img style="padding:20px;" src="<?php echo BASE_URL . 'assets/images/footer/google-navegacao-segura.png' ?>" width="160"/>
                     </div>
                     <!-- Grid column -->
 
 
                     <!-- Grid column -->
                     <div style="" class="col-md-6 mb-md-0 mb-3">
-                        <h3 style="line-height:75px;color:#4b7a86;"><strong>Sua melhor solução está aqui.</strong></h3>
+                        <h3 style="line-height:75px;color:#4b7a86;"><strong></strong></h3>
 
                     </div>
                     <!-- Grid column -->

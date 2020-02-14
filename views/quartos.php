@@ -1,6 +1,9 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>
 <div class="container">
     <div class="quartos-container tab">
+        <div style="">
+            <a href="<?php echo BASE_URL; ?>quartos/adicionar"><button class="btn-add-quarto">Cadastrar Quarto</button></a>
+        </div>
         <!--<h4>Quartos</h4>-->
         <?php foreach ($quartos as $quarto): ?>
             <div class="quarto">

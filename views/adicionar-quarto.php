@@ -1,4 +1,4 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>
 <div class="container">
     <div class="adicionar-container">
         <div class="title"><h4>Insira as informações do quarto</h4></div>

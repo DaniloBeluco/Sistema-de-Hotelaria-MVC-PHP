@@ -61,7 +61,7 @@ class reservasController extends controller {
 
             if ($reservas->verificarDisponibilidade($quarto, $data_inicio, $data_fim)) {
                 $reservas->reservar($quarto, $data_inicio, $data_fim, $cliente);
-                header("Location: " . BASE_URL . "reservas/adicionar?aviso=sucesso");
+                header("Location: " . BASE_URL . "reservas");
                 exit;
             } else {
                 header("Location: " . BASE_URL . "reservas/adicionar?aviso=error");

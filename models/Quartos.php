@@ -3,9 +3,7 @@
 class Quartos extends model {
 
     public function getQuartos($offset, $total) {
-
-     
-
+        
         $sql = "SELECT * FROM quartos LIMIT $offset, $total";
         $sql = $this->db->query($sql);
 

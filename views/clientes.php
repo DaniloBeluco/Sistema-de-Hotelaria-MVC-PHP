@@ -1,4 +1,4 @@
-<?php include 'menu-lateral.php'; ?>
+<?php include 'menu-lateral-design.php'; ?>
 <div class="container">
     <div class="cliente-container" >
 
@@ -10,6 +10,7 @@
                     <input type="text" class="pesq_cpf" name="filtro_cpf" id="cpf" placeholder="Digite o CPF"/>
                     <input type="submit" class="btn-filtrar" value="Filtrar"/>
                 </form>
+                <a href="<?php echo BASE_URL; ?>clientes/adicionar"><button class="btn-add">Cadastrar Cliente</button></a>
             </div>
             <div class="clientes-content">
                 <table class='table table-bordered' width='100%'>
@@ -31,7 +32,7 @@
                                 <td><?php echo utf8_encode($item['telefone']); ?></td>
                                 <td><?php echo utf8_encode($item['sexo']); ?></td>
                                 <td><?php echo utf8_encode(date('d/m/Y', (strtotime($item['data_nascimento'])))); ?></td>
-                                <td><a href="<?php echo BASE_URL.'clientes/editar?id='.$item['id'];?>"><button class="btn btn-default btn-opcoes">Editar</button></a><a href="<?php echo BASE_URL.'clientes/excluir?id='.$item['id'];?>"><button class="btn btn-danger btn-opcoes">Excluir</button></a></td>
+                                <td><a href="<?php echo BASE_URL . 'clientes/editar?id=' . $item['id']; ?>"><button class="btn btn-default btn-opcoes">Editar</button></a><a href="<?php echo BASE_URL . 'clientes/excluir?id=' . $item['id']; ?>"><button class="btn btn-danger btn-opcoes">Excluir</button></a></td>
                             </tr>
                             <?php
                         endforeach;

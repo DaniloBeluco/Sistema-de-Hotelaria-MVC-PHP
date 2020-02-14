@@ -31,7 +31,7 @@ class clientesController extends controller {
             $atual = $_GET['p'];
         }
         $total = $c->getTotal();
-        $items_por_pagina = 6;
+        $items_por_pagina = 5;
         $paginas = ceil($total / $items_por_pagina);
         $offset = ($items_por_pagina * $atual) - $items_por_pagina;
 
@@ -60,7 +60,7 @@ class clientesController extends controller {
 
             if ($c->verificarCadastrado($cpf)) {
                 $c->cadastrar($nome, $cpf, $telefone, $data_nascimento, $sexo);
-                header("Location: " . BASE_URL . "clientes/adicionar?aviso=sucesso");
+                header("Location: " . BASE_URL . "clientes");
                 exit;
             } else {
                 header("Location: " . BASE_URL . "clientes/adicionar?aviso=error");

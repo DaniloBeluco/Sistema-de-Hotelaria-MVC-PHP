@@ -54,6 +54,7 @@ class quartosController extends controller {
             $descricao = addslashes($_POST['descricao']);
 
             $c->cadastrar($nome, $capacidade, $nome_foto, $descricao);
+            header("Location: ".BASE_URL."quartos");
         }
         $this->loadTemplate("adicionar-quarto", $dados);    //carrega a view do home
     }
